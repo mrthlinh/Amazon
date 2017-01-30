@@ -1,6 +1,7 @@
 CS6360 Database Design
 
 Team 2: Linh Truong
+
 HW1 (Due Feb. 3)
 List down possible entities and attributes (Customer, Product)
 
