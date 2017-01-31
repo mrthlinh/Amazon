@@ -30,7 +30,7 @@ Order
 -	Order ID (PK)
 -	Order date
 -	Customer ID (FK)
--	Shipping Status
+-	Shipping Status (changeable only for admin)
 
 Sales Tax
 -	State
