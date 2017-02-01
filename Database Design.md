@@ -14,23 +14,37 @@ Entity
 Customer
 -	Customer/User ID (PK)
 -	Isadmin (for administrators to login update/delete user and change shipment details)
--	Credit Card Info (could be an entity, 1:M relationship with customer)
 - Username
 - Password
-- First name
-- Last name
-- Email
-- Sex
-- Birthday
+- Name
 - Shipping Address (up till street)
 - Shipping State (->Sales Tax)
+
+Credit Card Info (could be an entity, 1:M relationship with customer)
+- User ID
 
 Product
 -	Product ID (PK)
 - Price
 -	Quantity
+- Description
 - Category (Electronics, Clothes, Food)
+- Average Rating
+- Primary Supplier
+
+Inventory
+- Product ID
+- Supplier ID
+- Price
+- Quantity
 - Special Offer Discount (?)
+
+Evaluation
+- product ID (PK)
+- customer ID
+- rate
+- comments
+
 
 Special Offer Discount (adjustable by admin)
 - Index (PK)
