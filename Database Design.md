@@ -16,7 +16,8 @@ Customer
 -	Isadmin (for administrators to login update/delete user and change shipment details)
 - Username
 - Password
-- Name
+- First Name
+- Last Name (I still think it should be two variables)
 - Shipping Address (up till street)
 - Shipping State (->Sales Tax)
 
