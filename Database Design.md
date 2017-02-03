@@ -1,7 +1,7 @@
 (Edited 1/30)
 CS6360 Database Design
 
-Team 2: Linh Truong, Sheng-Lin Chen, Shicheng Zhou, Tracy
+Team 2: Linh Truong, Sheng-Lin Chen, Shicheng Zhou, Chun Chen
 
 HW1 (Due Feb. 3)
 List down all possible entities and attributes (Customer, Product)
