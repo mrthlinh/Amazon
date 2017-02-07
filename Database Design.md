@@ -14,45 +14,52 @@ Entity
 Customer
 -	Customer/User ID (PK)
 -	Isadmin (for administrators to login update/delete user and change shipment details)
-- Username
+- Username (email)
 - Password
 - First Name
-- Last Name (I still think it should be two variables)
-- Shipping Address (up till street)
-- Shipping State (->Sales Tax)
+- Last Name
 
-Credit Card Info (could be an entity, 1:M relationship with customer)
-- User ID
+Address
+- Index ID (PK)
+- Customer ID
+- Receiver Name
+- Shipping Address
+- Shipping State
+- Zip Code
+
+Credit Card Info
+- Index ID (PK)(because credit card number cannot be PK)
+- Customer ID
+- Full name
+- Credit Card Number (12 digit)
+- Security Code (3 digit)
+- Expiriation Date (Month/Year)
 
 Product
 -	Product ID (PK)
-- Price
--	Quantity
 - Description
 - Category (Electronics, Clothes, Food)
-- Average Rating
-- Primary Supplier
 
 Inventory
+- Index ID (PK) - b/c one supplier can have multiple products and one products can have multiple suppliers
 - Product ID
 - Supplier ID
 - Price
 - Quantity
-- Special Offer Discount (?)
 
 Evaluation
-- product ID (PK)
-- customer ID
-- rate
+- comment id (PK)
+- product ID
+- username
+- rate (1-5)
 - comments
 
+Cart
+- Cart Index (PK)
+- Customer ID
+- Inventory Index ID
 
-Special Offer Discount (adjustable by admin)
-- Index (PK)
-- Discount % (60% off, 70% off)
-- Discount end date
-
-Order
+Order (make sure to delete from cart table)
 -	Order ID (PK)
 -	Order date
 - Predicted arrival date (make it like 5~7 days)
@@ -60,7 +67,11 @@ Order
 -	Shipping Status (changeable only for admin)
 - Supplier
 
+Supplier
+- Supplier ID (PK)
+- Supplier Name
+- Supplier Description
+
 Sales Tax
--	Shipping State (->Customer)
--	Postal Code (PK)
+-	Shipping State (->Customer)(PK)
 -	Tax amount
